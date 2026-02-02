@@ -1,9 +1,4 @@
 body {
-   margin: 0;
-  min-height: 100vh;
-  display: flex;
-    justify-content: center;
-  align-items: center;
   font-family: Times New Roman, sans-serif;
   background-color: #FFC5D3;
   color: #222;
