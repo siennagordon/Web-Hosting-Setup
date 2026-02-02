@@ -5,6 +5,9 @@ body {
 }
 
 header {
+   background-color: #1f3a5f;
+  color: white;
+  padding: 30px;
   text-align: center;
 }
 
