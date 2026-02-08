@@ -1,0 +1,34 @@
+<input type="number" id="num1" placeholder="First number">
+<input type="number" id="num2" placeholder="Second number">
+
+<select id="operator">
+  <option value="+">+</option>
+  <option value="-">−</option>
+  <option value="*">*</option>
+  <option value="/">/</option>
+</select>
+
+<input type="text" id="color" placeholder="Color (e.g. red)">
+
+<button id="calculate">Calculate</button>
+
+<p id="result">Result will appear here</p>
+<script>
+$("#calculate").click(function () {
+  let n1 = Number($("#num1").val());
+  let n2 = Number($("#num2").val());
+  let op = $("#operator").val();
+  let color = $("#color").val();
+
+  let result;
+
+  if (op === "+") result = n1 + n2;
+  if (op === "-") result = n1 - n2;
+  if (op === "*") result = n1 * n2;
+  if (op === "/") result = n2 !== 0 ? n1 / n2 : "Cannot divide by zero";
+
+  $("#result")
+    .text("Result: " + result)
+    .css("color", color || "black");
+});
+</script>
