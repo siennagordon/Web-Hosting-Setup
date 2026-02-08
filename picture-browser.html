@@ -1,0 +1,31 @@
+<img id="viewer" src="" alt="Nature image" width="400">
+<p id="caption"></p>
+<button id="next">Next</button>
+<script>
+let images = [
+  { src: "image1.jpg", alt: "Mountain landscape", caption: "Mountain View" },
+  { src: "image2.jpg", alt: "Forest trail", caption: "Forest Path" },
+  { src: "image3.jpg", alt: "Ocean sunset", caption: "Sunset Over Water" }
+];
+
+let index = 0;
+
+function showImage() {
+  $("#viewer")
+    .fadeOut(300, function () {
+      $(this)
+        .attr("src", images[index].src)
+        .attr("alt", images[index].alt)
+        .fadeIn(300);
+    });
+
+  $("#caption").text(images[index].caption);
+}
+
+$("#next").click(function () {
+  index = (index + 1) % images.length;
+  showImage();
+});
+
+showImage();
+</script>
