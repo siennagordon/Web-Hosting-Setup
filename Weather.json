@@ -1,0 +1,27 @@
+{
+  "name": "New York",
+  "main": {
+    "temp": 72,
+    "humidity": 65
+  },
+  "weather": [
+    {
+      "description": "clear sky"
+    }
+  ],
+  "wind": {
+    "speed": 5
+  }
+}
+var city = weather.name;
+var temp = weather.main.temp;
+var humidity = weather.main.humidity;
+var description = weather.weather[0].description;
+var wind = weather.wind.speed;
+$("#weatherInfo").html(
+    "<h2>Weather in " + city + "</h2>" +
+    "<p><strong>Temperature:</strong> " + temp + "°F</p>" +
+    "<p><strong>Description:</strong> " + description + "</p>" +
+    "<p><strong>Humidity:</strong> " + humidity + "%</p>" +
+    "<p><strong>Wind Speed:</strong> " + wind + " mph</p>"
+);
