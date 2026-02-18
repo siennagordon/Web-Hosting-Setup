@@ -3,13 +3,13 @@ $(document).ready(function() {
 
     $.getJSON("movie.json", function(data) {
 
-        $("#title").text(data.Title);
-        $("#year").text(data.Year);
-        $("#genre").text(data.Genre);
-        $("#director").text(data.Director);
-        $("#actors").text(data.Actors);
+        $("#title").text(data.title);
+        $("#year").text(data.year);
+        $("#genre").text(data.genre);
+        $("#director").text(data.director);
+        $("#actors").text(data.actors);
         $("#rating").text(data.imdbRating);
-        $("#plot").text(data.Plot);
+        $("#plot").text(data.plot);
 
     });
 
