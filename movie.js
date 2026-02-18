@@ -8,7 +8,7 @@ $(document).ready(function() {
         $("#genre").text(data.genre);
         $("#director").text(data.director);
         $("#actors").text(data.actors);
-        $("#rating").text(data.imdbRating);
+        $("#rating").text(data.rating);
         $("#plot").text(data.plot);
 
     });
