@@ -1,3 +1,4 @@
+alert("JS loaded");
 $(document).ready(function() {
 
     $.getJSON("movie.json", function(data) {
