@@ -1,7 +1,7 @@
 alert("JS loaded");
 $(document).ready(function() {
 
-    $.getJSON("Movie.json", function(data) {
+    $.getJSON("movie.json", function(data) {
 
         $("#title").text(data.Title);
         $("#year").text(data.Year);
